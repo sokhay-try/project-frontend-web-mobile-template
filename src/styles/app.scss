@@ -1,0 +1,44 @@
+@use './theme.scss' as *;
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+
+html,
+body,
+#app {
+  font-family: var(--van-base-font);
+}
+
+html {
+  background: var(--van-gray-1);
+  font-size: var(--van-font-size-lg);
+  color-scheme: light;
+}
+
+html.dark {
+  background: var(--van-primary-color);
+  color-scheme: dark;
+}
+
+#app {
+  height: 100%;
+  position: relative;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+  background: transparent;
+}
+
+
+/* utils class that can reusable */
+.items-center {
+  align-items: center;
+}
+.cursor-pointer {
+  cursor: pointer;
+}
